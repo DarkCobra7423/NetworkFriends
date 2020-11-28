@@ -14,99 +14,163 @@ and open the template in the editor.
         <meta name="generator" content="Jekyll v3.8.5">
         
         <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles/bootstrap.min.css" rel="stylesheet">
         <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
         
         <style type="text/css">
-        body{
-    font-family: 'Open Sans', sans-serif;
-}
+            body{
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            .title{
+                color: white;
+                display: inline-block;
+                padding-top: .3125rem;
+                padding-bottom: .3125rem;
+                margin-right: 1rem;
+                font-size: 1.25rem;
+                line-height: inherit;
+                white-space: nowrap;
+            }
+            
+            .logo i {
+                font-size: 31px;
+                margin-right: 4px;
+                word-spacing: 14px;
+            }
+            
+            .logo{
+                color: white;
+                margin: 0;
+                font-size: 20px;
+                padding: 4px 0;
+                padding-bottom: 15px;
+                }
+                
+                .login-bottom-text{
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    font-size: 12px;
+                    color: white;
+                    line-height: 19px;
+                }
+                
+                header{
+                    background: #343A40;
+                    padding-top: 20px;
+                }
+                
+                header .form-group{
+                    margin-bottom: 0px;
+                }
+                
+                header .btn-header-login{
+                    margin-bottom: 15px;	
+                }
+                
+                .login-main{
+                    margin-top: 130px;
+                }
+                
+                .multibox{
+                    padding-left: 0px;
+                    padding-bottom: 10px;
+                }
+                
+                .login-main span{
+                    font-size: 12px;
+                } 
+                
+                footer hr{
+                    margin-top: 0px;
+                    padding-top: 0px;
+                }
+                
+                .footer-options ul{
+                    clear: both;
+                    padding: 0px;
+                    margin: 0px;
+                }
+                
+                .footer-options ul li{
+                    float:left;
+                    list-style: none;
+                    padding: 5px;
+                    font-size: 12px;
+                }
+                
+                .footer-options ul li a{
+                    text-decoration: none;
+                    color: #000;
+                }
+                
+                .copyrights{
+                    margin-top: 25px;
+                }
 
-
-
-
-
-.logo i {
-	font-size: 31px;
-	margin-right: 4px;
-	word-spacing: 14px;
-}
-.logo{
-	color: white;
-	margin: 0;
-	font-size: 20px;
-	padding: 4px 0;
-	padding-bottom: 15px;
-
-}
-.login-bottom-text{
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-size: 12px;
-	color: white;
-	line-height: 19px;
-}
-
-header{
-	background: #3b5998;
-	padding-top: 20px;
-}
-header .form-group{
-	margin-bottom: 0px;
-}
-header .btn-header-login{
-	margin-bottom: 15px;	
-}
-.login-main{
-	margin-top: 130px;
-}
-.multibox{
-	padding-left: 0px;
-	padding-bottom: 10px;
-}
-.login-main span{
-	font-size: 12px;
-} 
-
-
-
-footer hr{
-	margin-top: 0px;
-	padding-top: 0px;
-}
-.footer-options ul{
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-.footer-options ul li{
-	float:left;
-	list-style: none;
-	padding: 5px;
-	font-size: 12px;
-}
-.footer-options ul li a{
-	text-decoration: none;
-	color: #000;
-}
-.copyrights{
-	margin-top: 25px;
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
 }
 
     </style>
         
     </head> <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-    
+    <!----------------------------------------------------------------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="index.php"><font size=14><b>Network Friends</b></font></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <form class="form-inline mt-2 mt-md-0" action=home.php>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email Address">
+                        <div class="login-bottom-text checkbox hidden-sm">
+                            <label>
+                                <input type="checkbox" id=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                Keep me sign in
+                                </font></font></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                            <div class="login-bottom-text hidden-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Forgot your password?  </font></font></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="form-group">
+                                            <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">
+                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                                        </div>
+                                    </div>
+                
+                
+            </form>
+        </div>
+        </nav>
+    </header>
+    <!----------------------------------------------------------------------------------------------->
     <body>
-        
+                <!--
         <div align="center">
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="home.php">
             <fieldset>
                 <header>
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="logo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Network Friends</font></font></div>
+                                <div align="left" class="logo">
+                                    <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                    <a class="title" style="text-decoration:none" href="#"><h1><b>Network Friends</b></h1></a></font></font></div>    
                             </div>
                             <div class="col-sm-6 hidden-xs">
                                 <div class="row">
@@ -123,13 +187,15 @@ footer hr{
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Password">
+                                            <input type="password" class="form-control" placeholder="Password">
                                             <div class="login-bottom-text hidden-sm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Forgot your password?  </font></font></div>
                                         </div>
                                     </div>
                                     <div class="col-sm-2">
                                         <div class="form-group">
-                                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="button" value="Login" class="btn btn-default btn-header-login"></font></font>
+                                            <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">
+                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
                                         </div>
                                     </div>
                                 </div>
@@ -137,24 +203,16 @@ footer hr{
                         </div>
                     </div>
                 </header>
+            </fieldset>
+            </form>
                 </div>
-        
+        -->
         <!--////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <article class="container">
             <div class="row">
                 <div class="col-sm-8">
                     <div class="login-main">
-                        <h4><i class="fa fa-dashboard"></i> Gorgeous color and design</h4>
-                        <span>Some sample description text about the template goes here</span>
-                        
-                        <h4> <i class="fa fa-money"></i> 100%  fully responsive </h4>
-                        <span>Another description text about the template goes here</span>
-                        
-                        <h4><i class="fa fa-mobile-phone"></i> Competible with all browers and mobile devices</h4>
-                        <span>Yet another sample description text can be placed in one line</span>
-                        
-                        <h4> <i class="fa fa-trophy"></i> Easy to use and custmize with mobile friendly and responsive</h4>
-                        <span>Your last description text about your startup or business</span>
+                        <h1>Aqui ira una imagen de<br> fondo pero aun no se cual</h1>
                     </div>
                 </div>
                 
@@ -423,7 +481,12 @@ footer hr{
                         
                         <div class="form-group">
                             <label class="control-label" for="">Gender</label>
-                            <input type="text" class="form-control" placeholder="Gender">
+                            <br>
+                            <label>
+                                <input type="radio" name="color" value="azul"> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="color" value="negro"> Female
                         </div>
                         
                         <div class="form-group">
@@ -444,7 +507,7 @@ footer hr{
                         <div class="">
                             <label>Birthday</label>
                             
-                            <select name="dia" class="form-group">
+                            <select name="dia" class="form-birthdate">
                                 <?php
                                 for ($i=1; $i<=31; $i++) {
                                     if ($i == date('j'))
@@ -455,7 +518,7 @@ footer hr{
                                     ?>
                             </select>
                             
-                            <select name="mes">
+                            <select name="mes" class="form-birthdate">
                                 <?php
                                 for ($i=1; $i<=12; $i++) {
                                     if ($i == date('m'))
@@ -466,7 +529,7 @@ footer hr{
                                     ?>
                             </select>
                             
-                            <select name="ano">
+                            <select name="ano" class="form-birthdate">
                                 <?php
                                 for($i=date('o'); $i>=1910; $i--){
                                     if ($i == date('o'))
@@ -476,7 +539,7 @@ footer hr{
                                     }
                                     ?>
                             </select>
-                            
+                        
                             <!--Ahora solo falta recibir la fecha con PHP para procesarla.-->
                            <?php
                             #if (isset($_POST['enviar'])) {
@@ -487,7 +550,6 @@ footer hr{
 
                         </div>
                         
-                        
                         <small>
                             By clicking Sign Up, you agree to our Terms and that you have read our
                             Data Use Policy, including our Cookie Use.
@@ -496,10 +558,12 @@ footer hr{
                         <!-- Button -->
 			<div style="height:10px;"></div>
                         
+                        <form action="signup.php">
                         <div class="form-group">
                             <label class="control-label" for=""></label>
-                            <input type="submit" value="Sign Up" class="btn btn-primary">
+                            <button class="btn btn-primary" type="submit">Sign Up</button>
                         </div>
+                        </form>
                       
                     </div>
                 </div>
@@ -509,5 +573,11 @@ footer hr{
         
     </body><!--/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
     
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">Copyright &copy; Instituto Tecnológico de Villahermosa</span>
+            <a class="footer" href="https://www.facebook.com/carlosdaniel.angelpadilla.3/"><h6>By Carlos Daniel Angel Padilla</h6></a>
+        </div>
+    </footer>
     
 </html>
