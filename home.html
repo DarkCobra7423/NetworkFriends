@@ -11,7 +11,7 @@ and open the template in the editor.
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="ITVH">
+  <meta name="author" content="TECNOLOGIAS COBRA">
   <meta name="generator" content="Jekyll v3.8.5">
 
   <!-- Bootstrap core CSS -->
@@ -127,6 +127,7 @@ and open the template in the editor.
 </head>
 <!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
+
 <!--//////////////////////////////////////////////////////////////////////////////////////////////-->
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -204,6 +205,152 @@ and open the template in the editor.
 <hr>
 <hr>
 <hr>
+<!-------------------------------------------------------------------------------->
+
+   <link href="styles/styles.css" rel="stylesheet">
+</article>
+<article class="container">
+  <div class="row">
+    <!-------------------------------------------------------------------------------------------------->
+     <!-------------------------------------------------------------------------------------------------->
+    <div class="fb-cards-designs">
+      <div class="fb-clone-card">
+        <div class="fb-card-main-content">
+            
+            <form method="post" action="upload.php" enctype="multipart/form-data" id="uploadForm">
+                <div class="user-post-info">
+              <div class="user-thumb">
+                <img src="images/carlos.jpeg" class="img-responsive" />
+              </div>
+              <div class="user-information">
+                <p>Carlos Daniel Angel Padilla</p>
+              </div>
+            </div>
+                
+                     <div class="fb-card-body simple-text-card simple-image-card">
+              
+            <!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="txtheader"></label>
+  <div class="col-md-4">                     
+      <textarea rows="5" cols="53" class="form-publicar-textarea" id="txtheader" name="txtheader" placeholder="What are you thinking about?" required="" maxlength="1000" style="font-size: 14px;font-style: normal;"></textarea>
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group" align="center">
+ <input type="file" name="file" id="file" hidden/>
+ <label id="cargarFotoVideo" class="cargarFotoVideo" for="file">Foto/Video</label>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="footer"></label>  
+  <div class="col-md-8-footer-publicar">
+  <input id="footer" name="footer" type="text" placeholder="Footer" class="form-control input-md">
+    
+  </div>
+</div>
+          </div>
+        </div>
+
+
+        <div class="fb-card-comments">
+          <div class="comment-input-holder">
+           <a type="submit" name="Enviar" value="Enviar" href="" for="post" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-cloud-upload" ></span>  Publicar</a>
+          </div>
+        </div>    
+            </form>
+            
+            
+            
+            
+          
+ 
+   
+    <!-------------------------------------------------------------------------------------------------->
+  </div>
+  </div>
+  </div>
+</article> 
+<hr>
+
+ 
+<!----------------------------------------------------------------------------------------------------------->
+<article class="container">
+  <div class="row">
+      <!------------------------------------------------------------------------>
+
+      
+    <!-------------------------------------------------------------------------------------------------->
+    <div class="fb-cards-designs">
+      <div class="fb-clone-card">
+        <div class="fb-card-main-content">
+          <div class="fb-card-header">
+            <div class="user-post-info">
+              <div class="user-thumb">
+                <img src="images/carlos.jpeg" class="img-responsive" />
+              </div>
+              <div class="user-information">
+                <p>Carlos Daniel Angel Padilla</p>
+                <small>1 hr</small>
+              </div>
+            </div>
+            <div class="post-action">
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+          </div>
+          <div class="fb-card-body simple-text-card simple-image-card">
+            <p>Isn't It Beautiful?</p>
+            <div class="images-container">
+              <img src="images/halo.jpg" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+
+        <div class="fb-card-like-comment-holder">
+          <div class="fb-card-like-comment">
+            <div class="likes-emoji-holder">
+              <span>14 Likes</span>
+            </div>
+            <div class="like-comment-holder">
+              <span>10 Commnets</span>
+            </div>
+          </div>
+        </div>
+        <div class="fb-card-actions-holder">
+          <div class="fb-card-actions">
+            <div class="fb-btn-holder">
+              <a href="#"><i class="far fa-thumbs-up"></i> Like</a>
+            </div>
+            <div class="fb-btn-holder">
+              <a href="#"><i class="far fa-comment-alt"></i> Comment</a>
+            </div>
+
+            <div class="fb-btn-holder">
+              <a href="#"><i class="far fa-share-square"></i> Share</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fb-card-comments">
+          <div class="comment-input-holder">
+            <div class="user-thumb">
+              <img src="images/carlos.jpeg" class="img-responsive" />
+            </div>
+            <div class="comment-input">
+              <div class="comment-box" placeholder="Write a comment..." contenteditable="true" placeholder="write a comment"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------->
+  </div>
+  </div>
+  </div>
+  
+</article>
 <article class="container">
   <div class="row">
     <!-------------------------------------------------------------------------------------------------->
@@ -286,6 +433,31 @@ and open the template in the editor.
     </a>
   </div>
 </footer>
+
+<script type="text/javascript">
+    
+    function filePreview(input) {
+
+if (input.files && input.files[0]) {
+
+var reader = new FileReader();
+
+reader.readAsDataURL(input.files[0]);
+
+reader.onload = function (e) {
+
+$('#uploadForm + img').remove();
+
+$('#uploadForm').after('<img src="'+e.target.result+'" width="450" height="300"/>');
+
+}
+
+}
+
+}
+    
+</script>
+
 
 </html>
 
