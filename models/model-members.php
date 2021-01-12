@@ -19,25 +19,25 @@ class Miembro extends Model {//nombre de esta clase
  */
 }
 
-$usuario = new Miembro($db);
-$usuario->setView ("members");
-$usuario->setTable("members");
+$member = new Miembro($db);
+$member->setView ("members");
+$member->setTable("members");
  
 
-$usuario->setKey  ("idmembers");
-$usuario->addField("firstname");
-$usuario->addField("lastname");
-$usuario->addField("country");
-$usuario->addField("email");
-$usuario->addField("gender");
-$usuario->addField("username");
-$usuario->addField("password");
-$usuario->addField("image");
-$usuario->addField("birthdate");
-$usuario->addField("mobile");
-$usuario->addField("status");
-$usuario->addField("religion");
-$usuario->addField("IdTipoUsuario");
-
-$miembro->newRecord();
+$member->setKey  ("idmembers");
+$member->addField("firstname");
+$member->addField("lastname");
+$member->addField("country");
+$member->addField("email");
+$member->addField("gender");
+$member->addField("username");
+$member->addField("password");
+$member->addField("image");
+$member->addField("birthdate");
+$member->addField("mobile");
+$member->addField("online");
+$member->addField("religion");
+$member->addField("IdTipoUsuario");
+$member->addField("current_session");
+$member->newRecord();
 ?>

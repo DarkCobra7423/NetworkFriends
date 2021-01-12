@@ -10,6 +10,6 @@
     <link rel="stylesheet" href=<?php echo $recursos_bs_css ?>>
     -->
     <link rel="stylesheet" href=<?php echo $recurso_bootstrap_mdf ?>>
-    <link rel="stylesheet" href=<?php echo $recurso_styles ?>>
+    <link rel="stylesheet" href=<?php  echo $recurso_styles ?>>
     
 </head>

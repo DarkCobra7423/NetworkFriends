@@ -72,15 +72,8 @@ if (!isset($_SESSION['usuario']) or $_SESSION['usuario']->IdTipoUsuario<>3) {
          <div class="mesgs">
          <div class="msg_history">
              
-        <?php 
-        //SELECT * FROM vw_message WHERE (`receiver_idmembers`='1' OR `receiver_idmembers`='2') AND (`sender_id`='2' OR `sender_id`='1')
-        $db->debug();
-        
-        $message->getWhere("(receiver_idmembers='{$idVar}' OR receiver_idmembers='{$idVar}') AND (sender_id='2' OR sender_id='2')");
+        <?php//SELECT * FROM vw_message WHERE (`receiver_idmembers`='1' OR `receiver_idmembers`='2') AND (`sender_id`='2' OR `sender_id`='1') ?>
 
-        while ($row = $message->next()) {
-        ?>
- 
             <div class="incoming_msg">
               <div class="incoming_msg_img"> <img src="images/carlos.jpeg" alt="sunil" class="imgRedonda"> </div>
               <div class="received_msg">
@@ -91,18 +84,7 @@ if (!isset($_SESSION['usuario']) or $_SESSION['usuario']->IdTipoUsuario<>3) {
                 </div>
               </div>
             </div>
-        <?php } ?>
-             
-        <?php 
-        //SELECT * FROM vw_message WHERE (`receiver_idmembers`='1' OR `receiver_idmembers`='2') AND (`sender_id`='2' OR `sender_id`='1')
-        $db->debug();
-        
-        $message->getWhere("(receiver_idmembers='1' OR receiver_idmembers='1') AND (sender_id='{$idVar}' OR sender_id='{$idVar}')");
-
-        while ($row = $message->next()) {
-        ?>
-              
-             
+         
             <div class="outgoing_msg">
               <div class="sent_msg">
                 <p>Please test all the options so
@@ -110,7 +92,7 @@ if (!isset($_SESSION['usuario']) or $_SESSION['usuario']->IdTipoUsuario<>3) {
                 <span class="time_date"> 11:01 AM | June 9</span>
               </div>
             </div>
-        <?php } ?>
+
 
           </div>
           <div class="type_msg">

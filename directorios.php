@@ -12,8 +12,8 @@ $recursos_bs_jq   = "vendor/bootstrap/js/jquery-3.2.1.slim.min.js";
 $recursos_pop_js  = "vendor/bootstrap/js/popper.min.js";
 
 #Styles
-$recurso_styles = "styles/styles.css";
-$recurso_bootstrap_mdf = "styles/bootstrap.min.css";
+$recurso_styles = "vendor/bootstrap/styles/styles.css";
+$recurso_bootstrap_mdf = "vendor/bootstrap/styles/bootstrap.min.css";
 
 #JavaScript
 $javascript ="js/js.js";
@@ -36,3 +36,7 @@ $templates_footer_pro = $base_dir . "/views/template/footer_pro.php";
 $templates_navbar_adm = $base_dir . "/views/template/navbar_adm.php";
 $templates_header_adm = $base_dir . "/views/template/header_adm.php";
 $templates_footer_adm = $base_dir . "/views/template/footer_adm.php";
+
+//---------------------chat---------------------------------
+$chat = "js/chat.js";
+//-----------------------------------------------------------

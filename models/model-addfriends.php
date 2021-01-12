@@ -1,7 +1,7 @@
 <?php
 require_once("model-base.php");
 
-class Friends extends Model {//nombre de esta clase
+class addFriends extends Model {//nombre de esta clase
     public function __construct($db) {
         parent::__construct($db);
     }
@@ -19,20 +19,15 @@ class Friends extends Model {//nombre de esta clase
  */
 }
 
-$friends = new Friends($db);//Objeto de esta clase
-$friends->setView ("vw_friends");
-$friends->setTable("friends");//nombre de la tabla
+$addFriends = new addFriends($db);//Objeto de esta clase
+$addFriends->setView ("friends");
+$addFriends->setTable("friends");//nombre de la tabla
 
 // campos de la tabla
-$friends->setKey  ("idfirends");
-$friends->addField("my_id");
-$friends->addField("idmembers");
-$friends->addField("friend_request");
-$friends->addField("firstname");
-$friends->addField("lastname");
-$friends->addField("country");
-$friends->addField("image");
-$friends->addField("online");
+$addFriends->setKey  ("idfirends");
+$addFriends->addField("my_id");
+$addFriends->addField("idmembers");
+$addFriends->addField("friend_request");
 
-$friends->newRecord();
+$addFriends->newRecord();
 ?>

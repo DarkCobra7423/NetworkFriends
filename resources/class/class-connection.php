@@ -1,16 +1,27 @@
 <?php
 //error_reporting(E_ALL);
 //error_reporting(0);
-            
-//$db = Connection("mvc");
-//$db = Connection("networkfriends1");
+
 $db = Connection("NetworkFriends");
+//$db = Connection("epiz_27012996_networkfriends");
 
 function Connection($database,$usr="root",$pass=""){
     $obj= new DBObject("localhost",$database,$usr,$pass);
+    //$obj= new DBObject("sql302.epizy.com",$database,$usr,$pass);
     $obj->execute("set names utf8",array());
     return($obj);
 }
+
+/*
+$db = Connection("epiz_27012996_networkfriends");
+
+function Connection($database,$usr="epiz_27012996",$pass="TYHqfk39OqWy0yD"){
+    $obj= new DBObject("sql302.epizy.com",$database,$usr,$pass);
+    //$obj= new DBObject("sql302.epizy.com",$database,$usr,$pass);
+    $obj->execute("set names utf8",array());
+    return($obj);
+}
+*/
 
 class DBObject {
 

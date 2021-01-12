@@ -1,6 +1,6 @@
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <img src="images/mini_networkfriendslogo.png">
-    <a class="navbar-brand" href="index.html">
+      <img src="resources/img/mini_networkfriendslogo.png">
+    <a class="navbar-brand" href="index.php">
       <font size=14><b>Network Friends</b></font>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

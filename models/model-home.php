@@ -24,6 +24,7 @@ $home->setView ("vw_post");
 $home->setTable("post");//nombre de la tabla
 
 // campos de la tabla
+/*
 $home->setKey  ("idmembers");
 $home->addField("firstname");
 $home->addField("lastname");
@@ -32,6 +33,18 @@ $home->addField("header");
 $home->addField("images");
 $home->addField("footer");
 $home->addField("date_homeed");
+*/
+
+$home->setKey  ("my_id");
+$home->addField("idmembers");
+$home->addField("firtsname");
+$home->addField("lastname");
+$home->addField("image");
+$home->addField("header");
+$home->addField("images");
+$home->addField("footer");
+$home->addField("date_posted");
+$home->addField("friend_request");
 
 $home->newRecord();
 ?>

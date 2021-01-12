@@ -45,18 +45,6 @@ class Usuario extends Model {
 $usuario = new Usuario($db);
 $usuario->setView ("members");
 $usuario->setTable("members");
- 
-/*
-$usuario->setKey  ("IdUsuario");
-$usuario->addField("Nombre");
-$usuario->addField("ApellidoPat");
-$usuario->addField("ApellidoMat");
-$usuario->addField("UsuarioBD");
-$usuario->addField("Password");
-$usuario->addField("Telefono");
-$usuario->addField("Domicilio");
-$usuario->addField("IdTipoUsuario");
-*/
 
 $usuario->setKey  ("idmembers");
 $usuario->addField("firstname");
@@ -72,6 +60,7 @@ $usuario->addField("mobile");
 $usuario->addField("status");
 $usuario->addField("religion");
 $usuario->addField("IdTipoUsuario");
+$usuario->addField("current_session");
 
 
 $usuario->newRecord();
