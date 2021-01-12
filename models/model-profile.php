@@ -35,7 +35,7 @@ $profile->addField("password");
 $profile->addField("image");
 $profile->addField("birthdate");
 $profile->addField("mobile");
-$profile->addField("status");
+$profile->addField("online");
 $profile->addField("religion");
 $profile->addField("IdTipoUsuario");
 $profile->newRecord();

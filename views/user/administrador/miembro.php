@@ -4,7 +4,7 @@ if (!isset($_SESSION['usuario']) or $_SESSION['usuario']->IdTipoUsuario<>3) {
     header('location:?page=login');
 }
 ?>
-<?php include $base_dir . "/models/model-miembros.php";?>
+<?php include $base_dir . "/models/model-members.php";?>
 <?php include $templates_header_adm ?>
     <body>
 

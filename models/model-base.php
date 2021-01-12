@@ -67,7 +67,23 @@ class Model {
     public function deleteWhere($condition){
         $this->db->execute("DELETE FROM {$this->table} WHERE {$condition}");
     }
-
+    //--------------------------------------------------------------------------
+    public function getCountAll($condition,$order=""){
+        if($order) $ord =" ORDER BY {$order}"; else $ord="";
+        $this->data=$this->db->recordSet("SELECT COUNT(*) FROM {$this->view} WHERE {$condition} {$ord}");
+    }
+    
+    public function getWhereTable($condition,$order=""){
+        if($order) $ord =" ORDER BY {$order}"; else $ord="";
+        $this->data=$this->db->recordSet("SELECT * FROM {$this->table} WHERE {$condition} {$ord}");
+    }
+    
+    public function getInnerJoin($condition,$order=""){
+        if($order) $ord =" ORDER BY {$order}"; else $ord="";
+        $this->data=$this->db->recordSet("SELECT COUNT(*) FROM {$this->view} WHERE {$condition} {$ord}");
+    }
+    
+    //--------------------------------------------------------------------------
 
 }
 

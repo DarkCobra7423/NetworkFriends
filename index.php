@@ -47,9 +47,18 @@ if (isset($_GET["page"])) {
         case 'adm-start':
             include 'views/home/start.php';
         break;
-        
+            case 'adm-graphics-number-of-users-by-age':
+            include 'views/user/administrador/graphics-number-of-users-by-age.php';
+        break;
+        case 'adm-monthly-publications':
+            include 'views/user/administrador/monthly-publications.php';
+        break;
+        case 'adm-chat':
+            include 'views/user/administrador/chat.php';
+        break;
         
         ////._------------------------------------
+    /*
         case 'adm-materia':
             include 'views/user/administrador/materia.php';
             break;
@@ -80,6 +89,8 @@ if (isset($_GET["page"])) {
         case 'adm-usuario-editar':
             include 'views/user/administrador/usuario_editar.php';
             break;
+     * 
+     */
 
     }
 } else {

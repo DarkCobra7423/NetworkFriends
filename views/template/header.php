@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
     
-    <link rel="stylesheet" href=<?php echo $recurso_bootstrap_mdf ?>>
-    <link rel="stylesheet" href=<?php echo $recurso_styles ?>>
+    <link href="vendor/bootstrap/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/styles/styles.css" rel="stylesheet">
     
     <!--
     <link href="styles/bootstrap.min.css" rel="stylesheet">

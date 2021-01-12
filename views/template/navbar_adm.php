@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <img src="images/mini_networkfriendslogo.png">
+    <img src="resources/img/mini_networkfriendslogo.png">
     <a class="navbar-brand" href="?page=adm-home">
       <font size=14><b>Network Friends</b></font>
     </a>
@@ -24,17 +24,17 @@
           <a class="nav-link" href="?page=adm-profile">Profile </a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link" href="?page=adm-statistics">Statistics </a>
+          <a class="nav-link" href="?page=adm-chat">Statistics </a>
           <ul>
-            <li><a href="?page=adm-monthlypublications">Monthly Publications </a></li>
+            <li><a href="?page=adm-monthly-publications">Monthly Publications </a></li>
             <!--grafica de las publicaciones del usuario mensual-->
-            <li><a href="?page=adm-usersontheplatform">Users on the platform </a></li>
+            <li><a href="?page=adm-users-on-the-platform">Users on the platform </a></li>
             <!--grafica del numero de usuarios regstrados por mes-->
-            <li><a href="?page=adm-sessionstarts">Session starts </a></li>
+            <li><a href="?page=adm-session-starts">Session starts </a></li>
             <!--grafica de veces que se inicia sesion propondo grafica de puntos-->
-            <li><a href="?page=adm-registeredusersperday">Registered users per day </a></li>
+            <li><a href="?page=adm-registered-users-per-day">Registered users per day </a></li>
             <!--usuarios registrador por dia grafica-->
-            <li><a href="?page=adm-numberofusersbyage">Number of users by age </a>
+            <li><a href="?page=adm-graphics-number-of-users-by-age">Number of users by age </a>
               <!--grafica de cantidad de usuarios por edad -->
               <!---
         <ul>
